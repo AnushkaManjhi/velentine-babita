@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heart-background"></div>
+
+    <div id="game-container">
+        <div id="page-1" class="page show">
+            <h1>Hey Babita, welcome to my Valentine's Game!</h1>
+            <p>Are you ready for a little adventure?</p>
+            <button onclick="nextPage(1)">Yes, I'm ready!</button>
+        </div>
+
+        <div id="page-2" class="page">
+            <h2>Great! Let’s start...</h2>
+            <p>First question: Do you like surprises?</p>
+            <button onclick="answerQuestion('yes', 2)">Yes, I love surprises!</button>
+            <button onclick="answerQuestion('no', 2)">No, not really...</button>
+        </div>
+
+        <div id="page-3" class="page">
+            <h2>Awesome, I have a fun surprise for you!</h2>
+            <p>Would you like to spend Valentine's Day with me?</p>
+            <button onclick="answerQuestion('yes', 3)">Yes, I would love that!</button>
+            <button onclick="answerQuestion('no', 3)">No, thanks...</button>
+        </div>
+
+        <div id="page-4" class="page">
+            <h2>So, here's the big question...</h2>
+            <p>Babita, will you be my Valentine?</p>
+            <button onclick="answerQuestion('yes', 4)">Yes, I will!</button>
+            <button onclick="answerQuestion('no', 4)">No, I'm sorry...</button>
+        </div>
+
+        <div id="page-5" class="page">
+            <h2>Yay!</h2>
+            <p>Babita says YES! We’re officially Valentines!</p>
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+
+        <div id="page-6" class="page">
+            <h2>Oh no...</h2>
+            <p>Babita says NO. But hey, it’s okay! Maybe next year...</p>
+            <button onclick="resetGame()">Try Again?</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
